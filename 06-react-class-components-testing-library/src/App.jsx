@@ -26,7 +26,6 @@ class App extends React.Component {
   }
 
   handleFilterByName = (name) => {
-    console.log('handleFilterByName', name)
     let filtered = this.state.contacts.filter(contact => {
       let filter = new RegExp(`${name}\\w`, 'i')
       return contact.name.match(filter)
